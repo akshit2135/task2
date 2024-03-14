@@ -12,9 +12,11 @@ body{
     border-radius: 50%;
 }
 nav{
+    width: 100%;
     background-color: black;
-    /* position: fixed; */
+    position: fixed;
     z-index: 999;
+    box-shadow: 3px 3px 10px black;
    
     
    
@@ -44,6 +46,12 @@ nav a{
 nav a:hover{
     background-color: rgb(41, 37, 37);
 }
+/* #showsidebar{
+    display: none;
+}
+#showsidebar:hover{
+    background-color: black;
+} */
 nav li:first-child{
     margin-right: auto;
 }
@@ -59,6 +67,7 @@ nav li:first-child{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    box-shadow: 3px 3px 10px black;
 }
 #sidebar li{
     width: 100%;
@@ -73,10 +82,20 @@ nav li:first-child{
 #close{
     fill: white;
 }
+@media(width >= 840px) {
+    #showsidebar{
+        display: none;
+    }
+}
 @media(width < 840px){
     .hideonmobile{
         display: none;
+        /* visibility: none; */
+        /* visibility: hidden; */
     }
+    /* #showsidebar{
+        display: block;
+    } */
     #menu{
         display: block;
     }
@@ -92,6 +111,7 @@ nav li:first-child{
 @media(width < 400px){
     #sidebar{
         width: 100%;
+        display: flex;
     }
 }
 #roborealm{
@@ -110,7 +130,7 @@ nav li:first-child{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 75vh;
+    height: 85vh;
     background-image: url(small_red_robotic_car_in_a_rac.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,10 +169,65 @@ nav li:first-child{
     font-weight: 500;
     padding: 5px 10px;
     background-color: rgb(31, 25, 150);
-    transition: background-color 2s;
+    transition: background-color 1s;
     border: solid 2px black;
     border-radius: 8px;
 }
 #registerbtn:hover{
-    background-color: rgb(169, 107, 46);
+    background-color: rgb(33, 126, 159);
+}
+#roboquiz{
+    background-image: url(robot_face-off_concept_art_dig.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    justify-content: space-around;
+
+}
+.logos{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+#sponsorspage{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+#sponsors{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    padding: 30px 5px;
+}
+footer{
+    background-color: black;
+    color: grey;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+footer a{
+    text-decoration: none;
+    list-style-type: none;
+    color: grey;
+}
+footer ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 40px 10px;
+    width: 500px;
+
 }
