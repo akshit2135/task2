@@ -12,7 +12,7 @@ body{
     border-radius: 50%;
 }
 nav{
-    width: 100%;
+    width: 100vw;
     background-color: black;
     position: fixed;
     z-index: 999;
@@ -104,14 +104,29 @@ nav li:first-child{
     .shrink{
         font-size: 15px;
     }
+    .eventtitle{
+        font-size: 40px;
+
+    }
+    #info1{
+        font-size: 20px;
+    }
     #saeimg{
         height: 70px;
+    }
+    #mazemechathon{
+        background-repeat: repeat-x;
+        width: 100vw;
+    }
+    #roboquiz{
+        background-repeat: repeat-x;
+        width: 100vw;
     }
 }
 @media(width < 400px){
     #sidebar{
         width: 100%;
-        display: flex;
+        
     }
 }
 #roborealm{
@@ -231,3 +246,4 @@ footer ul{
     width: 500px;
 
 }
+
