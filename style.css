@@ -6,6 +6,7 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     min-height: 100vh;
+    max-width: 100vw;
 }
 #saeimg{
     height: 100px;
@@ -100,13 +101,9 @@ nav li:first-child{
         display: block;
     }
 }
-@media(max-width: 950px){
-    .shrink{
-        font-size: 15px;
-    }
-    .eventtitle{
+@media(width < 950px){
+    #sponsors{
         font-size: 40px;
-
     }
     #info1{
         font-size: 20px;
@@ -114,13 +111,10 @@ nav li:first-child{
     #saeimg{
         height: 70px;
     }
-    #mazemechathon{
-        background-repeat: repeat-x;
-        width: 100vw;
-    }
-    #roboquiz{
-        background-repeat: repeat-x;
-        width: 100vw;
+    
+    .shrinklogo{
+        height: 20px;
+        width: 50px;
     }
 }
 @media(width < 400px){
@@ -215,6 +209,8 @@ nav li:first-child{
     display: flex;
     justify-content: space-around;
     background-color: black;
+    width: 100%;
+    margin: 0 auto;
 }
 #sponsors{
     background-color: black;
@@ -254,6 +250,10 @@ footer ul{
     #info1{
         font-size: 20px;
 
+    }
+    .shrinklogo{
+        height: 120px;
+        width: 150px;
     }
 }
 
