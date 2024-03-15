@@ -83,46 +83,7 @@ nav li:first-child{
 #close{
     fill: white;
 }
-@media(width >= 840px) {
-    #showsidebar{
-        display: none;
-    }
-}
-@media(width < 840px){
-    .hideonmobile{
-        display: none;
-        /* visibility: none; */
-        /* visibility: hidden; */
-    }
-    /* #showsidebar{
-        display: block;
-    } */
-    #menu{
-        display: block;
-    }
-}
-@media(width < 950px){
-    #sponsors{
-        font-size: 40px;
-    }
-    #info1{
-        font-size: 20px;
-    }
-    #saeimg{
-        height: 70px;
-    }
-    
-    .shrinklogo{
-        height: 20px;
-        width: 50px;
-    }
-}
-@media(width < 400px){
-    #sidebar{
-        width: 100%;
-        
-    }
-}
+
 #roborealm{
     display: flex;
     justify-content: center;
@@ -251,9 +212,56 @@ footer ul{
         font-size: 20px;
 
     }
-    .shrinklogo{
+    
+}
+@media(width >= 840px) {
+    #showsidebar{
+        display: none;
+    }
+}
+@media(width < 840px){
+    .hideonmobile{
+        display: none;
+
+    }
+
+    #sidebar{
+        width: 50%;
+    }
+    #menu{
+        display: block;
+    }
+    
+}
+
+@media(width < 400px){
+    #sidebar{
+        width: 100%;
+        
+    }
+}
+@media(width < 950px){
+    .logos{
         height: 120px;
         width: 150px;
+    }
+}
+@media(width < 700px){
+    .logos{
+        height: 60px;
+        width: 75px;
+    }
+}
+@media(width < 450px){
+    .logos{
+        height: 32px;
+        width: 40px;
+    }
+}
+@media(width < 350px){
+    .logos{
+        height: 12px;
+        width: 15px;
     }
 }
 
